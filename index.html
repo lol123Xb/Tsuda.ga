@@ -1,0 +1,1411 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tsuda</title>
+	<meta name="keywords" content="discord, js, multipurpose, bot, multi, purpose, moderate, moderation, mod, admin, fun, utility, javascript, java, python, module, modular">
+	<meta name="description" content="A Multipurpose Discord JS Bot. Has a ton of features which include: fun, utility, moderation and whatnot.">
+	<meta name="author" content="Felix">
+	<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="http://i.imgur.com/hymRlFt.png">
+
+	<!-- Fonts -->
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/morris.css">
+	<link rel="stylesheet" href="css/jquery.jqplot.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/revolution/settings.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/theme-styles.css">
+
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="one-page">
+
+	<div class="preloader"><span class="loader"><span class="loader-inner"></span></span>
+	</div>
+
+	<div class="main">
+		<section class="section" data-background="rgba(38,37,37,0.8);" data-background-image="img/Tsuda_Takatoshi_32.jpg" data-nav-color="#ffffff" data-nav-color-text="#d6973d" data-color="#ffffff" data-title-color="#ffffff" data-title="Home" data-anchor="home">
+			<header class="site-header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-9 col-sm-4 left-align no-left-indent"></div>
+
+						<div class="col-sm-4 logo-box">
+							<div class="logo-t">
+								<div class="logo-tr">
+									<div class="logo-tc">
+										<a href="index.html" class="logo">
+											<img src="img/logo.png" width="140" height="49" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-3 col-sm-4 right-align no-right-indent">
+							<div class="navbar navbar-default" role="navigation">
+								<button type="button" class="btn navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+				<span class="icon close-icon">
+				  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+					<path fill="#D73E4D" d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0
+					l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7
+					c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>
+				  </svg>
+				</span><!-- .close -->
+				
+				<span class="icon open-icon">
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</span><!-- .open -->
+			  </button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="header-menu">
+					<nav id="main-menu" class="collapse navbar-collapse">
+						<ul class="col-sm-12 col-md-6 nav navbar-nav">
+							<li class="parent">
+								<a href="#"><span>Home</span></a>
+							</li>
+							<li><a href="#about"><span>About</span></a></li>
+							<li><a href="#updates"><span>Updates</span></a></li>
+							<li><a href="#special-people"><span>Special People</span></a></li>
+							<li><a href="#donate"><span>Donate</span></a></li>
+							<li><a href="#features"><span>Features</span></a></li>
+							<li><a href="#commands"><span>Command List</span></a></li>
+							<li><a href="#collaboration"><span>Projects I'm Helping</span></a></li>
+							<li><a href="#contact"><span>Contact</span></a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</nav>
+				</div>
+				<!-- .header-menu -->
+			</header>
+			<!-- .site-header -->
+
+			<div class="section-content">
+				<div class="section-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-12 info text-center">
+								<h1 class="section-title" data-appear-animation="bounceInUp" data-appear-animation-delay="100"><strong>Tsuda</strong><br>A Multipurpose Discord Bot made in Discord JS</h1>
+								<a href="https://discordapp.com/oauth2/authorize?client_id=326622770341478400&scope=bot&permissions=8" target="_blank" class="btn btn-lg btn-warning" data-appear-animation="bounceInUp" data-appear-animation-delay="300">Add Bot to Server</a>
+								<br><br>
+								<a href="https://discord.gg/RdTjDVm" target="_blank" class="btn btn-lg btn-primary" data-appear-animation="bounceInUp" data-appear-animation-delay="400">Join Discord Server</a>
+							</div>
+							<!-- .info -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section vertical-top about-us-section" data-background="#ffffff" data-nav-color="#ffffff" data-nav-color-text="#b58664" data-color="#000000" data-title-color="#b58664" data-title="About" data-anchor="about">
+			<div class="section-content">
+				<div class="container section-wrap">
+					<div class="row">
+						<div class="col-sm-6 section-bg right">
+							<img src="img/Bugkiller.jpg" width="1920" height="1100" alt="" data-appear-animation="fadeInDownBig" data-appear-animation-delay="300">
+						</div>
+						<!-- .section-bg -->
+
+						<div class="col-sm-6 col-lg-5 info" data-appear-animation="fadeInUpBig" data-appear-animation-delay="300">
+							<h1 class="section-title">About Tsuda</h1>
+							<div class="descriptions">
+								<p>Tsuda is, as stated before, a Multipurpose Discord Bot made in Discord JS. The bot was only made because I wanted a bot that had such great commands for people who were unable to use since they lacked the role. For instance, you have a private
+									gaming voice channel, but people keep joining to fill up the user limit of, eg: 6. Now you could either contact a mod to change the user limit OR you could use Tsuda and change the user limit to, eg: 5 for League of Legends. Now that pesky one
+									extra person will be unable to rejoin!<br>If you're looking for a multipurpose bot that can do this and a lot of other things, then look no more. You've come to the right place!<br><br>PS: This bot was made because of a late night thinking :)</p>
+								<p>Join Tsuda in his official Discord server: <a href="https://discord.gg/RdTjDVm">https://discord.gg/RdTjDVm</a></p>
+								<p>Also, Tsuda will not be made available on Github. Consider supporting me on my <a href="https://www.patreon.com/tsudabot" target="_blank">Patreon</a> if you want access to the source code.</p>
+							</div>
+						</div>
+						<!-- .info -->
+					</div>
+				</div>
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section vertical-top about-us-section" data-background="#ffffff" data-nav-color="#000000" data-nav-color-text="#ffffff" data-color="#000000" data-title-color="#000000" data-title="Updates" data-anchor="updates">
+			<div class="section-content">
+				<div class="container section-wrap">
+					<div class="row">
+						<div class="col-sm-6 section-bg">
+							<img src="img/milestone.png" width="960" height="1100" alt="" data-appear-animation="fadeInDownBig" data-appear-animation-delay="300">
+
+							<div class="tab-content numbered-list-description inverse">
+								<a href="#" class="close">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+				  <path fill="inherit" d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0
+				  l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7
+				  c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"></path>
+				</svg>
+								</a>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-1">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											15/07
+										</h3> How magical with the fact that Tsuda has suddenly became version 1.3.5, am I right? No? Maybe? Whatever..
+										<br>So many of you will probably be wondering what the new features are, well I'll list them now:
+										<br>+ Roulette Betting - You can now do some fake betting with the roulette system that MaximLevtov made because he wanted to learn some Discord JS by coding it in PHP and Discord JS.
+											<br>+ Anime and MyAnimeList profile search - Search for your favorite anime and search for a user on MAL
+											<br>+ Reaction and action commands - Stuff like hug or pout
+											<br>+ And a better looking profile card that works with a bio and title command - Set your bio and title for your profile card, will make website integration soon once I purchase a VPS because I am hosting this server and my bot on a workspace (C9.io and CodeAnywhere) and not a proper VPS as you require a VPS in order to install OAuth2 Discord and whatnot.
+											<br>That's all for now, will keep adding more commands!
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-2">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											11/07
+										</h3> I have gotten my hands on a friend of mine who is essentially a PHP god and we setted up a MYSQL database with PHP and now everything works perfectly.<br>
+Daily and Rep commands are now all online so you do not need to worry about any f**k ups when the bot crashes.<br>
+
+I will now proceed to make everything configurable on a website eg: your bio field can be edited on the website rather than through code only, but you can only purchase new backgrounds through the website.
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-3">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											09/07
+										</h3> You can view the new profile card <a href="https://c3.patreon.com/2/patreon-posts/335166403010055215.png?t=1500768000&v=0NL1NhFk_belQCfYZ6_lB0j3I8SPcztCI8BzE-AjXtw%3D">here</a>
+										<br>So I've completed updating the card and all, but at what cost?
+I had to remove SQLite for JSON and JSON doesn't allow me to globally remove eg: rep limit or credit limit so I cannot have those commands for a while, seeing if we can move onto HTTP requests.<br>
+
+For now, the rep command and credits command will be disabled. Once I get this HTTP request stuff working, both will come back and I will add an extra goodness to the left side of the profile card!
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-4">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											09/07
+										</h3> I will be updating the profile card and adding more commands to make it a heck more configurable, eg: information command where you can type some random info like "major loner" (which is what I am) and a title command where you can set your title as "the guy who totally has a lot of friends" or something like that.
+Later I may or may not add in a ranking list or command, if I can figure out how to do that.
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-5">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											07/07
+										</h3> I completely forgot about updating the version of Tsuda :). He is now version 1.1.5 and has a lot of bug fixes and stuff. One bug was the fact that he'd keep crashing sometimes with the level up images so I just removed the profile picture from the level up notifcations and now he is 24/7 with the rep command all ready! Tsuda no longer does welcome messages until I figure out a way to make server only configs and stuff.<br>Also ExChang3S is no longer a developer, he's just a friend, but I'm still a developer for him.
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-6">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											28/06
+										</h3> A friend of mine is going to pay for the subscription, but I have to give him the money, so I can use c9.io now :))
+										<br>Woo!
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-7">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											27/06
+										</h3> Tsuda now announces people leveling up with an image like this one: <a href="https://cdn.discordapp.com/attachments/275946065340137472/329173235809910795/172864752865902592.png">Image</a>. You can view the profile command here: <a href="https://images.discordapp.net/attachments/250527231514902528/329166772169211905/172864752865902592.png">Awesomeness</a>.
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-8">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											25/06
+										</h3> Once again, not a big update, just added more Utility commands a shutdown command so it'll be easier for myself while I use CodeAnyWhere before I move over to C9.io
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-9">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											23/06
+										</h3> Not much of an update, but I just added in a few new commands and modified some, so have some fun or something
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-10">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											23/06
+										</h3> Created Tsuda's official Discord server. You can join here: <a href="https://discord.gg/96agsrC" target="_blank">https://discord.gg/96agsrC</a>
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-11">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											23/06
+										</h3> So basically, I became a developer for their Discord bot called <a href="http://info.exchang3.xyz/" target="_blank">Asuna</a> and they became a developer for Tsuda as well. And their name is Joh-... <i>Ahem...</i> ExChang3𝐒. I also made their website! :)
+									</div>
+								</div>
+								
+								<div role="tabpanel" class="tab-pane fade in active" id="item-12">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											22/06
+										</h3> Made the website fancy by adding in fading and changing text at the commands section. Fixed up the fonts as well so now it uses Miso font which was what it was supposed to use in the first place.
+									</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade in active" id="item-13">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											22/06
+										</h3> Added a few new commands and modified a bit of some. Some new features include: <b>8ball, sex jokes as the now playing status, a working welcome message</b> and more to come.<br>Some modifications include: making almost every command respond
+										with an embed message rather than a plain message.
+									</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade in active" id="item-14">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											21/06
+										</h3> Patreon page has been created. You can view <a href="http://patreon.com/tsudabot" target="_blank">here</a>. If you donate you will become a supporter and featured on the about section plus, you can get the source code from me if you donate
+										10$.
+									</div>
+								</div>
+
+								<div role="tabpanel" class="tab-pane fade in active" id="item-15">
+									<div class="tab-pane-wrap">
+										<h3 style="text-align:center">
+											20/06
+										</h3> It was on this day that the bot called Tsuda realised the developer was a trashy coder. Also version 1.0.0 was released on this day. Just to let you guys know, I will not be releasing this bot onto Github or I might depending on how popular
+										Tsuda will get.
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<!-- .section-bg -->
+
+						<div class="col-sm-5 col-sm-offset-7 info">
+							<h1 class="section-title" data-appear-animation="fadeIn" data-appear-animation-delay="1000">Updates</h1>
+
+							<div class="numbered-list carousel-black">
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1100">
+									<a href="#item-1" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>v1.3.5!</strong><br>Skipped versions</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1200">
+									<a href="#item-2" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Updated Databases</strong><br>New PHP God</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1300">
+									<a href="#item-3" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Completed Profile Card</strong><br>But at what cost?</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1400">
+									<a href="#item-4" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cloud-upload"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>New Profile Card</strong><br>Once this is completed, Tsuda will be v1.2.0!</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1500">
+									<a href="#item-5" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Bug fixes!</strong><br>Tsuda now version 1.1.5</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1600">
+									<a href="#item-6" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-briefcase"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Moving away from Codeanywhere</strong><br>Now using C9.io</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1700">
+									<a href="#item-7" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Tsuda more awesome!</strong><br>Tsuda became v1.1.0 with a profile card command!</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1800">
+									<a href="#item-8" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Tsuda Upgraded</strong><br>Tsuda became v1.0.4</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="1900">
+									<a href="#item-9" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Tsuda Upgraded</strong><br>Tsuda became v1.0.2</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2000">
+									<a href="#item-10" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Discord Server Created</strong><br>Tsuda finally got his own Discord Server!</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2100">
+									<a href="#item-11" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-user"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>New Developer</strong><br>I became a dev for them and they became a dev for me</div>
+									</a>
+								</div>
+								
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2200">
+									<a href="#item-12" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Site updates</strong><br>Made website more fancy</div>
+									</a>
+								</div>
+
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2300">
+									<a href="#item-13" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Version 1.0.1</strong><br>Upgraded Tsuda to version 1.0.1</div>
+									</a>
+								</div>
+								<!-- .item -->
+
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2400">
+									<a href="#item-14" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-money"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Patreon Page Created</strong><br>If you donate, you can become a supporter!</div>
+									</a>
+								</div>
+								<!-- .item -->
+
+								<div class="item" data-appear-animation="fadeIn" data-appear-animation-delay="2500">
+									<a href="#item-15" class="item-link" role="tab" data-toggle="tab">
+										<i class="fa fa-cogs"></i>
+										<div class="number">2017</div>
+										<div class="text"><strong>Tsuda was Made</strong><br>Version 1.0.0</div>
+									</a>
+								</div>
+								<!-- .item -->
+
+
+							</div>
+							<!-- .numbered-list -->
+						</div>
+						<!-- .info -->
+					</div>
+				</div>
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section" data-background="rgba(0,0,0,.7)" data-background-image="img/special-people.jpg" data-nav-color="#ffffff" data-nav-color-text="#000000" data-color="#ffffff" data-title-color="#ffffff" data-title="Special People" data-anchor="special-people">
+			<div class="section-content">
+				<div class="container section-wrap filter-box works-box">
+					<div class="row section-title-block">
+						<h1 class="col-sm-4 section-title" data-appear-animation="fadeInLeftBig" data-appear-animation-delay="500">Special People</h1>
+
+						<div class="col-sm-8 text-right" data-appear-animation="fadeInRightBig" data-appear-animation-delay="500">
+							<div class="btn-group filter-buttons filter-list filter-list-white">
+								<button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown">
+				All <span class="caret"></span>
+			  </button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#" data-filter="*" class="active">All</a>
+										<li><a href="#" data-filter=".developer">Developers</a>
+											<li><a href="#" data-filter=".friend">Friends</a>
+											<li><a href="#" data-filter=".supporter">Supporters</a>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+							<!-- .filter-buttons -->
+						</div>
+					</div>
+					<!-- .section-title-block -->
+
+					<div class="row filter-elements">
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 developer">
+							<a href="http://github.com/lol123xb" target="_blank" class="work" data-appear-animation="fadeInDown" data-appear-animation-delay="200">
+								<div class="image">
+									<img src="img/felix.png" class="replace-2x" width="270" height="270" alt="">
+								</div>
+
+								<div class="hover"><i class="fa fa-arrows-alt"></i></div>
+
+								<h3 class="title">Felix</h3>
+							</a>
+							<!-- .work -->
+						</div>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 friend">
+							<a href="https://github.com/arrowhead110" target="_blank" class="work" data-appear-animation="fadeInDown" data-appear-animation-delay="300">
+								<div class="image">
+									<img src="img/arrowhead110.png" class="replace-2x" width="270" height="270" alt="">
+								</div>
+
+								<div class="hover"><i class="fa fa-arrows-alt"></i></div>
+
+								<h3 class="title">ArrowHead110</h3>
+							</a>
+							<!-- .work -->
+						</div>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 friend">
+							<a href="https://github.com/ExChang3" target="_blank" class="work" data-appear-animation="fadeInDown" data-appear-animation-delay="400">
+								<div class="image">
+									<img src="img/ExChang3.jpg" class="replace-2x" width="270" height="270" alt="">
+								</div>
+
+								<div class="hover"><i class="fa fa-arrows-alt"></i></div>
+
+								<h3 class="title">ExChang3</h3>
+							</a>
+							<!-- .work -->
+						</div>
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 friend developer">
+							<a href="#" target="_blank" class="work" data-appear-animation="fadeInDown" data-appear-animation-delay="500">
+								<div class="image">
+									<img src="img/matt.jpg" class="replace-2x" width="270" height="270" alt="">
+								</div>
+
+								<div class="hover"><i class="fa fa-arrows-alt"></i></div>
+
+								<h3 class="title">MaximLevtov</h3>
+							</a>
+							<!-- .work -->
+						</div>
+						
+					</div>
+					<!-- .filter-elements -->
+				</div>
+				<!-- .filter-box -->
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section centered-without-title" data-background="transparent" data-background-image="img/donate.jpg" data-nav-color="#000000" data-nav-color-text="#ffffff" data-color="#000000" data-title-color="#000000" data-title="Donate" data-anchor="donate">
+			<div class="section-content">
+				<div class="container section-wrap">
+					<div class="text-center">
+						<a href="https://www.patreon.com/tsudabot" target="_blank" class="btn btn-default btn-download" data-appear-animation="zoomIn" data-appear-animation-delay="100">
+							<span class="clearfix">Support us!</span>
+							<i class="fa fa-money"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section align-without-title services-section" data-background="transparent" data-background-image="img/features.jpg" data-nav-color="#b58664" data-nav-color-text="#ffffff" data-title-color="orange" data-title="Features" data-anchor="features">
+			<div class="section-content">
+				<div class="container section-wrap">
+					<h1 class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="900">Features</h1>
+
+					<div class="services-wrap inverse no-appear">
+						<div class="wrap-container">
+							<div class="column column-one">
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="600">
+									<canvas class="circle-skill" data-color="#1eb3c5" data-percent="100" data-title="Profile and Levels" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">Tsuda for a Profile + Level system</h3>
+										<div class="text">
+											<p>You can view a user's profile and see their level + points. Tsuda will also announce a level up with a cool image. You can also give people reputation points.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- .column-one -->
+
+							<div class="column column-two">
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+									<canvas class="circle-skill" data-color="#25b785" data-percent="100" data-title="Utility" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">Awesome Utility Commands</h3>
+										<div class="text">
+											<p>You can find out where an emoji came from and download it yourself so long as Tsuda is on that server as well, you can also download other users avatars if you think their avatar is cool! You can also find out about users and servers with just 2 simple commands!</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="500">
+									<canvas class="circle-skill" data-color="#4e67c4" data-percent="100" data-title="Suffix" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">A Suffix as an addition</h3>
+										<div class="text">
+											<p>Instead of just being filled with prefixes that are the same as other bots, you can use a suffix instead! Eg: 8ball~ &lt;question&gt;</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- .column-two -->
+
+							<div class="column column-three column-center">
+								<div class="circle-wrap main-circle" data-appear-animation="zoomIn" data-appear-animation-delay="100">
+									<div class="circle-content">
+										<h3 class="title">What Tsuda is currently offering</h3>
+									</div>
+
+									<div class="opened-content">
+										<a href="#" class="close">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+					  <path fill="inherit" d="M23.3,23.3c-0.6,0.6-1.5,0.6-2.1,0L0.7,2.8c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0
+					  l20.5,20.5C23.9,21.8,23.9,22.7,23.3,23.3L23.3,23.3z M23.3,2.8L2.8,23.3c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2.1L21.2,0.7
+					  c0.6-0.6,1.5-0.6,2.1,0C23.9,1.3,23.9,2.2,23.3,2.8L23.3,2.8z"/>
+					</svg>
+										</a>
+									</div>
+									<!-- .opened-content -->
+								</div>
+								<!-- .main-circle -->
+							</div>
+							<!-- .column-three -->
+
+							<div class="column column-four">
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="700">
+									<canvas class="circle-skill" data-color="#da8326" data-percent="100" data-title="Moderation" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">Kick and Ban those annoying people</h3>
+										<div class="text">
+											<p>Tsuda can be used to kick and ban those people that either break your rules or you just dislike them and you want to kick them.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="800">
+									<canvas class="circle-skill" data-color="#8f52c8" data-percent="100" data-title="Fancy Messages" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">Fancify your messages!</h3>
+										<div class="text">
+											<p>You can make your messages look fancy with Tsuda's two fancy commands, fancify and ascii.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- .column-four -->
+
+							<div class="column column-five">
+								<div class="circle-wrap" data-appear-animation="zoomIn" data-appear-animation-delay="900">
+									<canvas class="circle-skill" data-color="#da2626" data-percent="100" data-title="Playing Status" width="150" height="150"></canvas>
+									<div class="description">
+										<h3 class="title">Sex Jokes as Now Playing</h3>
+										<div class="text">
+											<p>Hillarious sex jokes from Seitokai Yakuindomo as the Now Playing status.<br>You can add your own if you become a <a href="https://www.patreon.com/tsudabot">patreon</a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- .column-five -->
+						</div>
+						<!-- .wrap-container -->
+					</div>
+					<!-- .services-wrap -->
+				</div>
+			</div>
+			<!-- .section-content -->
+		</section>
+		<!-- .section -->
+
+		<section class="section" data-background="rgba(37,37,37,0.85)" data-background-image="img/commands.jpg" data-nav-color="#ffffff" data-nav-color-text="#b58664" data-title-color="#b58664" data-color="#fbf1e7" data-title="Command List" data-anchor="commands">
+			<div class="section-content">
+				<div class="container section-wrap">
+					<h1 class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="700">Command List</h1>
+					<h5 data-appear-animation="fadeInDown" data-appear-animation-delay="700">Please keep in mind that most commands may or may not work as we are either updating the command or have disabled it for a while.</h5>
+
+					<div class="row panel-group third-style" id="accordion">
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="100">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				  <span data-words="~| "></span><span data-words="cmdhelp|cmdinfo"></span><span data-words=" |~"></span> <span data-words="<command>|stats|8ball"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+			  </h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays information on the command you typed in.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="200">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					<span data-words="~| "></span><span data-words="help|cmds|commands|commandlist"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays the list of commands.
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="300">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				  <span data-words="~| "></span><span data-words="invite|invitelink"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+			  </h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sends an invite link for the bot so you can add it to other servers if you've forgotten the link or want to add it to your own server.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="400">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+				  <span data-words="~| "></span><span data-words="ping|response"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"></a>
+			  </h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse">
+								<div class="panel-body">
+									Ping the bot and see your latency with it.
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="500">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+				  <span data-words="~| "></span><span data-words="purge|deletemessages|deletemsgs"></span><span data-words=" |~"></span> <span data-words="<number>|5|100"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"></a>
+			  </h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse">
+								<div class="panel-body">
+									Delete a number of messages in the certain text channel.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="600">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+				 <span data-words="~| "></span> <span data-words="belikebill|bill"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"></a>
+			  </h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse">
+								<div class="panel-body">
+									Get a Be like Bill meme straight to your text channel.
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="700">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+				  <span data-words="~| "></span><span data-words="voicelimit|vclimit|userlimit"></span><span data-words=" |~"></span> <span data-words="<amount>|0|99"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"></a>
+			  </h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse">
+								<div class="panel-body">
+									Changes the voice channel user limit of the one you are currently connected to.
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="800">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+				  <span data-words="~| "></span><span data-words="statistics|stats"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"></a>
+			  </h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse">
+								<div class="panel-body">
+									Check the stats of Tsuda, like how much servers he is connected to.
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="900">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+				  <span data-words="~| "></span>8ball<span data-words=" |~"></span> <span data-words="<question>|Finish coding Tsuda?|Get help for making Tsuda?"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"></a>
+			  </h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse">
+								<div class="panel-body">
+									Ask the mystical 8ball a question and see what it responds with.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1000">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+					<span data-words="~| "></span><span data-words="emoji|emote"></span><span data-words=" |~"></span> <span data-words="<emoji>|:advNanya:|:SataniaGun:"></span>
+				</a>
+				
+				<span data-words="~| "></span><a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTen"></a>
+			  </h4>
+							</div>
+							<div id="collapseTen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays detailed information about an emoji of a server that Tsuda currently resides within.
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1100">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+				  <span data-words="~| "></span><span data-words="fancify|fancy"></span><span data-words=" |~"></span> <span data-words="<text>|Marry me?|Slap me silly"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"></a>
+			  </h4>
+							</div>
+							<div id="collapseEleven" class="panel-collapse collapse">
+								<div class="panel-body">
+									Fancify your message by enlarging your text with the emoji text.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1200">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+				  <span data-words="~| "></span><span data-words="serverinfo|sinfo|server"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwelve" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays detailed information about the server you typed this command in.
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1300">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+				  <span data-words="~| "></span><span data-words="userinfo|uinfo|user"></span><span data-words=" |~"></span> <span data-words="<mention>|@tinty|@trollo101"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseThirteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays detailed information about the user you mentioned.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1400">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+				  <span data-words="~| "></span><span data-words="avatar|icon"></span><span data-words=" |~"></span> <span data-words="<mention>|@goblet|@dingdong"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseThirteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Displays a download link for the avatar of the user you mentioned.
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1500">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">
+				  <span data-words="~| "></span><span data-words="flush|deletebotmessages"></span><span data-words=" |~"></span> <span data-words="<amount>|12|25"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseFourteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Deletes the bot's messages.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1600">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen">
+				  <span data-words="~| "></span>sigh<span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseFifteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Gives out a big dramatic sigh.
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1700">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen">
+				  <span data-words="~| "></span><span data-words="ascii|figlet"></span><span data-words=" |~"></span> <span data-words="<message>|BORK|Meow"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseSixteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Fancifies your text with ASCII. Doesn't fit super long words or a lot of text.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1800">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">
+					<span data-words="~| "></span><span data-words="ban|kick"></span><span data-words=" |~"></span> <span data-words="<mention>|@felix|@maximlevtov"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen"></a>
+			  </h4>
+							</div>
+							<div id="collapseSeventeen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Mention a user with the command in front and they'll either get kicked or banned depending on what command you ran.
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="1900">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen">
+				  <span data-words="~| "></span><span data-words="giphy|gif"></span><span data-words=" |~"></span> <span data-words="<search>|cat|dog"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseEighteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Searches for a GIF off of Giphy
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2000">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen">
+				  <span data-words="~| "></span><span data-words="level|points"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen"></a>
+			  </h4>
+							</div>
+							<div id="collapseNineteen" class="panel-collapse collapse">
+								<div class="panel-body">
+									Check your level and amount of points you have
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2100">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty">
+				  <span data-words="~| "></span><span data-words="profile"></span><span data-words=" |~"></span> <span data-words="<nothing>|<mention>|@felix"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwenty" class="panel-collapse collapse">
+								<div class="panel-body">
+									Checks out your own profile if you don't mention anyone, or checks someone's profile if you do mention someone.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2200">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyOne">
+				  <span data-words="~| "></span><span data-words="-rep|+rep|rep-|rep+"></span><span data-words=" |~"></span> <span data-words="<mention>|@felix|@mango"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyOne"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									Use your daily (-/+)rep to either remove someone's rep point or add one
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2300">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyTwo">
+				  <span data-words="~| "></span><span data-words="support"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyTwo"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sends our official Discord server link
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2400">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyThree">
+				  <span data-words="~| "></span><span data-words="donate"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyThree"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sends our Patreon linkTwo
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2500">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFour">
+				  <span data-words="~| "></span><span data-words="rick|rickpickle|pickle|picklerick"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFour"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyFour" class="panel-collapse collapse">
+								<div class="panel-body">
+									I turned myself into a pickle, Morty.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2600">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFive">
+				  <span data-words="~| "></span><span data-words="bio"></span><span data-words=" |~"></span> <span data-words="<text>|Top 10 reasons...|I'm coolest guy"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyFive"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyFive" class="panel-collapse collapse">
+								<div class="panel-body">
+									Change your bio for the profile command
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2700">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentySix">
+				  <span data-words="~| "></span><span data-words="title"></span><span data-words=" |~"></span> <span data-words="<text>|Coolest guy|OG Dawg"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentySix"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentySix" class="panel-collapse collapse">
+								<div class="panel-body">
+									Change your title for the profile command
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2700">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentySeven">
+				  <span data-words="~| "></span><span data-words="daily"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentySeven"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentySeven" class="panel-collapse collapse">
+								<div class="panel-body">
+									Claim your daily credits
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2800">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyEight">
+				  <span data-words="~| "></span><span data-words="leveltoggle"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyEight"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyEight" class="panel-collapse collapse">
+								<div class="panel-body">
+									Toggle the level up messages for your server/guild
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="2900">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyNine">
+				  <span data-words="~| "></span><span data-words="dog|doggo"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyNine"></a>
+			  </h4>
+							</div>
+							<div id="collapseTwentyNine" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sends a random image of a dog
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="3000">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThirty">
+				  <span data-words="~| "></span><span data-words="cuddle|feed|hug|kiss|lick|pat|slap|stare|tickle"></span><span data-words=" |~"></span> <span data-words="<mention>|@slapperoni|@user12344|@Felix"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseThirty"></a>
+			  </h4>
+							</div>
+							<div id="collapseThirty" class="panel-collapse collapse">
+								<div class="panel-body">
+									Does a thing with someone you mention or Tsuda does it to you if you're that lonely
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-default col-sm-6" data-appear-animation="zoomIn" data-appear-animation-delay="3000">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThirtyOne">
+				  <span data-words="~| "></span><span data-words="kermit|nyan|owo|uwu|pout|rem|smug"></span><span data-words=" |~"></span>
+				</a>
+				
+				<a class="collapse-btn" data-toggle="collapse" data-parent="#accordion" href="#collapseThirtyOne"></a>
+			  </h4>
+							</div>
+							<div id="collapseThirtyOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									Sends an image for each reaction or just an image of a category
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- .section -->
+		
+		<section
+	class="section"
+	data-background="transparent"
+	data-background-image="https://s-media-cache-ak0.pinimg.com/originals/f3/55/ea/f355ea100acd4bc69d0ea7bff922c790.jpg"
+	data-nav-color="#ffffff"
+	data-nav-color-text="#000000"
+	data-color="#ffffff"
+	data-title-color="chocolate"
+	data-title="Collaboration"
+	data-anchor="collaboration">
+	<div class="section-content">
+	  <div class="container section-wrap">
+		<h1 class="section-title text-center" data-appear-animation="fadeInDown" data-appear-animation-delay="700">Projects I'm helping out</h1>
+		
+		<div class="row carousel carousel-white bottom-navigation" data-options='{"itemsCustom": [[0, 1],[768, 2],[992, 3]], "navigation": true}'>
+		  <div class="col-sm-6 col-md-4">
+			<div class="grid-post bg-white" data-appear-animation="zoomIn" data-appear-animation-delay="100">
+			  <div class="image">
+				<img src="img/heck.png" class="replace-2x" alt="" width="350" height="220">
+			  </div>
+			  
+			  <h3 class="title">Asuna Bot</h3>
+			  <div class="meta">A Moderation Discord bot made by ExChang3S</div>
+			  <div class="description">I was invited to help him out from the official bots.discord.pw discord server when he checked to see what lib my bot used and saw it was Discord JS. I also made his website.</div>
+			  <a href="http://info.exchang3.xyz" target="_blank" class="btn btn-sm btn-danger">View Project</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div><!-- .section-content -->
+  </section><!-- .section -->
+
+		<section class="section contact-section contact-section-business" data-background="rgba(37,37,37,0.85)" data-background-image="img/contact.jpg" data-nav-color="#ffffff" data-nav-color-text="#916b50" data-color="#ffffff" data-title-color="#fff7cc" data-title="Contact"
+			data-anchor="contact">
+			<div class="section-content">
+				<div class="container section-wrap" align="center">
+					<h1 class="section-title" data-appear-animation="fadeInLeft" data-appear-animation-delay="100">Contact</h1>
+
+					<div>
+						<form role="form" class="contact-form inverse" action="https://formspree.io/felix.doan1@gmail.com" method="POST">
+							<h3 class="form-title" data-appear-animation="fadeInRight" data-appear-animation-delay="300">Need anything?</h3>
+							<div class="form-group name" data-appear-animation="fadeInRight" data-appear-animation-delay="400">
+								<label>Your Name</label> <input class="form-control" data-required="" name="Name" type="text">
+							</div>
+							<div class="form-group email" data-appear-animation="fadeInRight" data-appear-animation-delay="500">
+								<label>Your Email</label> <input class="form-control" data-required="" name="Email" type="email">
+							</div>
+							<div class="form-group comment" data-appear-animation="fadeInRight" data-appear-animation-delay="600">
+								<label>Your Message</label>
+								<textarea class="form-control" data-required="" name="Message"></textarea>
+							</div>
+							<button class="btn btn-color" type="submit" data-appear-animation="fadeInRight" data-appear-animation-delay="700">Send Message</button>
+							<span class="form-message animated fadeInRight" data-appear-animation="fadeInRight" data-appear-animation-delay="700"></span>
+						</form>
+						<!-- .contact-form -->
+					</div>
+				</div>
+			</div>
+			<!-- .section-content -->
+
+			<footer class="site-footer footer-brown">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 left-align">
+							<div class="copyright">Copyright © Felix, 2017</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="social">
+								<a href="http://facebook.com/herobrineroar"><i class="fa fa-facebook"></i></a>
+								<a href="http://twitter.com/herpyderproar"><i class="fa fa-twitter"></i></a>
+								<a href="http://github.com/lol123xb"><i class="fa fa-github"></i></a>
+							</div>
+						</div>
+
+						<div class="col-sm-4 right-align">
+							<a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- .site-footer -->
+		</section>
+		<!-- .section -->
+	</div>
+	<!-- .main -->
+
+	<!--[if (!IE)|(gt IE 8)]><!-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lte IE 8]>
+  <script src="js/jquery-1.11.0.min.js"></script>
+<![endif]-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="js/jquery.touchwipe.min.js"></script>
+	<script src="js/jquery.themepunch.tools.min.js"></script>
+	<script src="js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/jquery.mlens-1.5.min.js"></script>
+	<script src="js/jquery.jqplot.min.js"></script>
+	<script src="js/jqplot.donutRenderer.min.js"></script>
+	<script src="js/raphael-min.js"></script>
+	<script src="js/morris.min.js"></script>
+	<script src="js/easy-circle-skill.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/TimeCircles.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="../cdn.getshar.es/lib/0.8.0.min.js"></script>
+	<script src="js/included-plagins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/data-words.js"></script>
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-101422969-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=11377260; 
+	var sc_invisible=1; 
+	var sc_security="f7c53b9b"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="free web stats"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="//c.statcounter.com/11377260/0/f7c53b9b/1/" alt="free
+	web stats"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+
+</html>
